@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <h1>Exemplo de Funcionario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected> ---Escolha---</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="Sp">Sao Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+        </p>
+        <p>
+            <label for="Profissão"></label>
+            <input type="text" name="prof" id="iprof">
+            <datalist id="list">
+                <option value="ADM">Adminidtrador</option>
+                <option value="DES">Desenvolvedor</option>
+            </datalist>
+            
+        </p>
+        <p>
+            <label for="msg">Mensagem</label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
